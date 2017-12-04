@@ -116,5 +116,8 @@ If your configuration method needs some additional user defined settings, you ha
 
 Use the `@notification_event` decorator defined in `fir_notifications.decorators` to decorate a classic Django signal handler function. This handler must return a tuple with an instance of the notification model and a queryset of the concerned business lines.
 
-
+### Notification Administration Guide
+**Notification Preference**
+ - In the *notification preference* screen, fill Event box with one of "Core FIR notifications" (seed Usage entry)
+ - In the *notification preference* screen, fill Method box with *email/xmpp* (case sensitive)
 
