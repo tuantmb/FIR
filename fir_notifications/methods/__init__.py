@@ -57,6 +57,9 @@ class NotificationMethod(object):
         """
         Choose the first matching template in a template list
         """
+        if templates is None:
+            return None
+        
         for template in templates:
             if self.use_subject and template.subject is None:
                 continue
