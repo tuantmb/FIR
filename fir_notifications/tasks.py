@@ -64,7 +64,9 @@ def get_user_templates(event, business_lines):
                         to_add.extend(all_templates[lower])
                         users[user] = to_add
                     else:
-                        users[user] = list(templates).extend(users[user])
+                        to_add = list(templates)
+                        to_add.extend(users[user])
+                        users[user] = to_add                      
                 # Other users => append the templates
                 for user in users:
                     if user not in users_done:
