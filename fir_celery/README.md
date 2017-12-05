@@ -17,5 +17,11 @@ Start a worker instance by using the __celery__ program. This is enough for test
 $ celery -A fir_celery.celeryconf worker -l info
 ```
 
+Or run with __screen__ command:
+```bash
+$ cd {your FIR path}
+$ screen -S fir_celery celery -A fir_celery.celeryconf worker -l info
+```
+
 ### TODO
 Improve this integration of celery as we add more tasks
